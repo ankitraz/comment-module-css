@@ -44,13 +44,13 @@ body {
 .comment_box .comment__content {
   position: relative;
   left: -3rem;
+  margin-bottom: 2rem;
 }
 .comment_box .comment__content .comment__header {
   font-weight: 700;
   margin-bottom: 1.4rem;
 }
 .comment_box .comment__content .comment__header::after {
-  content: "20 hours ago";
   font-weight: 400;
   color: grey;
   margin-left: 1.3rem;
@@ -74,6 +74,10 @@ body {
   margin-right: 1.7rem;
 }
 
+.comment-1 .comment__header::after {
+  content: "20 hours ago";
+}
+
 .comment-2 {
   margin-left: 6rem;
 }
@@ -92,7 +96,7 @@ body {
 }
 
 .comment-4 .comment__header::after {
-  content: "20 hours ago";
+  content: "12 hours ago";
 }
 
 .comment {
