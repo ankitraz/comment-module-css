@@ -1,0 +1,114 @@
+html {
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #6A03C6;
+    background: linear-gradient(270deg, #6A03C6, #B5889B);
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    background: white;
+    border-radius: 1rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+        padding: 2rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+        
+}
+
+
+.comment_box {
+    display: flex;
+    margin-bottom: 5rem;
+
+    img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+        position: relative;
+        top: -1rem;
+    }
+
+    .comment__content{
+        .comment__header{
+            font-weight: 700;
+            margin-bottom: 1.4rem;
+
+            &::after {
+                content: '20 hours ago';
+                font-weight: 400;
+                color: grey;
+                margin-left: 1.3rem;
+            }
+        }
+
+        .comment__body {
+            margin-bottom: 1.4rem;
+        }
+
+        .like__count{
+            font-weight: 800;
+            color: dodgerblue;
+            
+
+            &::before {
+                content: url(Assets/Up.svg);
+                margin-right: 0.7rem;
+            }
+
+            &::after {
+                content: url(Assets/Down.svg);
+                margin-left: 0.7rem;
+            }
+        }
+
+        span {
+            margin-right: 1.7rem;
+        }
+    }
+}
+
+.comment-2 {
+    margin-left: 6rem;
+
+    .comment__header{
+        &::after {
+            content: '16 hours ago';
+        }
+    }
+}
+.comment-3 {
+    margin-left: 11rem;
+    .comment__header{
+        &::after {
+            content: '14 hours ago';
+        }
+    }
+}
+
+.comment-4 {
+    .comment__header{
+        &::after {
+            content: '20 hours ago';
+        }
+    }
+}
